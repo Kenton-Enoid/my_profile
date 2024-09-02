@@ -32,7 +32,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = [".vercel.app", "https://my-profile-iota-gules.vercel.app/"] 
+ALLOWED_HOSTS = [".vercel.app"] 
 
 # Application definition
 
@@ -62,7 +62,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'portfolio_app' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
