@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Add STATICFILES_DIRS to specify the directory where static files are located
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles' / 'static'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Quick-start development settings - unsuitable for production
@@ -30,8 +30,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "kentonprofile.up.railway.app"] 
-CSRF_TRUSTED_ORIGINS = ['https://kentonprofile.up.railway.app']
+ALLOWED_HOSTS = [".vercel.app"] 
 
 # Application definition
 
