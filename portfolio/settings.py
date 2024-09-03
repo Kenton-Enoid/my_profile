@@ -19,10 +19,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Add STATICFILES_DIRS to specify the directory where static files are located
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = BASE_DIR / 'portfolio/staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'portfolio_app/static']
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
