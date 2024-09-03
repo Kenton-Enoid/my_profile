@@ -32,7 +32,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = [".vercel.app"] 
+ALLOWED_HOSTS = ["*", ".vercel.app"] 
 
 # Application definition
 
