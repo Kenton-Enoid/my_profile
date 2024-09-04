@@ -178,20 +178,20 @@ span {
     /* Ensure the image is fully visible within the frame */
     height: auto;
     /* Apply both rotation and scaling */
-    transform: rotate(2deg) scale(1.2);
+    transform: rotate(2deg);
     /* Ensure the image remains centered */
     transform-origin: center;
 }
 
 @keyframes floatImage {
     0% {
-        transform: rotate(2deg) scale(1.2);
+        transform: rotate(2deg);
     }
     50% {
-        transform: rotate(2deg) scale(1.2) translateY(-2.4rem);
+        transform: rotate(2deg) translateY(-2.4rem);
     }
     100% {
-        transform: rotate(2deg) scale(1.2);
+        transform: rotate(2deg);
     }
 }
 
