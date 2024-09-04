@@ -175,27 +175,32 @@ span {
 
 .about-img img {
     width: 35vw;
-    animation: floatImage 4s ease-in-out infinite;
-    transform: rotate(-2deg);
+    /* Ensure the image is fully visible within the frame */
+    height: auto;
+    /* Apply both rotation and scaling */
+    transform: rotate(2deg) scale(1.2);
+    /* Ensure the image remains centered */
+    transform-origin: center;
 }
 
 @keyframes floatImage {
     0% {
-        transform: rotate(-2deg);
+        transform: rotate(2deg) scale(1.2);
     }
-
     50% {
-        transform: rotate(-2deg);
+        transform: rotate(2deg) scale(1.2) translateY(-2.4rem);
     }
-
     100% {
-        transform: rotate(-2deg);
+        transform: rotate(2deg) scale(1.2);
     }
 }
 
 .round-image {
     border-radius: 50%;
+    /* Ensure overflow is hidden to maintain the round shape */
+    overflow: hidden;
 }
+
 
 .heading {
     text-align: center;
