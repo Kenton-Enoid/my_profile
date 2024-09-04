@@ -175,10 +175,12 @@ span {
 
 .about-img img {
     width: 300px; 
-    height: 300px; 
+    height: 300px;
+    margin-right: 10px; 
     object-fit: cover; 
     transform: rotate(2deg);
-    transform-origin: center; 
+    transform-origin: center;
+    animation: floatImage 4s ease-in-out infinite; 
 }
 
 @keyframes floatImage {
@@ -196,8 +198,7 @@ span {
 .round-image {
     border-radius: 50%; 
     overflow: hidden; 
-    display: inline-block;
-    animation: floatImage 4s ease-in-out infinite; 
+    display: inline-block; 
 }
 
 .heading {
