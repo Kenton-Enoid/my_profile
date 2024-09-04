@@ -176,20 +176,19 @@ span {
 .about-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
-    transform: rotate(-10deg);
 }
 
 @keyframes floatImage {
     0% {
-        transform: translateY(0) rotate(-10deg);
+        transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-2.4rem) rotate(-10deg);
+        transform: translateY(-2.4rem);
     }
 
     100% {
-        transform: translateY(0) rotate(-10deg);
+        transform: translateY(0);
     }
 }
 
